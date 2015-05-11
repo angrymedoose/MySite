@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Advantures</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+	
+		<script type="text/javascript" src="jquery-1.2.6.js"></script>
+		<div id="header" align="right">
+			<form action="find.php" method="post" enctype="multipart/form-data" target="_blank">
+<input name="num" type="text" id="form-query" value="" placeholder="поиск по сайту"> <input src="картинки/search.png" type="image" style="vertical-align: bottom; padding: 0;"/></form>
+		</div>
+	    <div id="menu">
+				<h2 id="div_Menu2"><a href="countrylist.html">Страны</a></h2>
+				<h2 id="div_Menu3"><a href="viewcomments.php">Отзывы</a></h2>
+				<h2 id="div_Menu4"><a href="articlelist.php?id=-1">Статьи</a></h2>
+		</div>
+		<div id="content">
+			
+		<script type="text/javascript">
+			 all_images = new Array ("страны/австрия.png","страны/австралия.png","страны/греция.png","страны/германия.png","страны/болгария.png","страны/бразилия.png","страны/великобритания.png","страны/венгрия.png", "страны/грузия.png","страны/египет.png", "страны/израиль.png", "страны/индия.png", "страны/испания.png", "страны/италия.png", "страны/канада.png", "страны/кипр.png", "страны/китай.png", "страны/куба.png", "страны/латвия.png","страны/литва.png","страны/мальдивы.png", "страны/мексика.png", "страны/нидерланды.png","страны/норвегия.png","страны/ОАЭ.png","страны/перу.png","страны/польша.png","страны/португалия.png","страны/россия.png","страны/румыния.png","страны/тунис.png","страны/украина.png","страны/филиппины.png","страны/финляндия.png","страны/франция.png","страны/хорватия.png","страны/черногория.png","страны/чехия.png","страны/швейцария.png","страны/швеция.png","страны/шри-ланка.png","страны/эстония.png","страны/ЮАР.png","страны/южная-корея.png","страны/япония.png");
+			 all_text = new Array ("austria.php","australia.php","greece.php","germany.php","bulgaria.php","Brazil.php","UK.php","hungary.php","georgia.php","egypt.php","israel.php","india.php","spain.php","italy.php","canada.php","cyprus.php","china.php","cuba.php","latvia.php","lithuania.php","maldives.php","mexico.php","netherland.php","norway.php","UAE.php","peru.php","poland.php","portugal.php","russia.php","romania.php","tunisia.php","ukraine.php","philippines.php","finland.php","france.php","croatia.php","montenegro.php","czech.php","switzerland.php","sweden.php","sri-lanka.php","estonia.php","SAR.php","south_korea.php","japan.php");
+			 var ImgNum = 0;
+			 var ImgLength = all_images.length - 1;
+			 var delay = 2500;
+			 var lock = false;
+			 var run;
+
+				 function chgImg(direction) {
+					 if (document.images) {
+					   ImgNum = ImgNum + direction;
+					   if (ImgNum > ImgLength) { ImgNum = 0; }
+					   if (ImgNum < 0) { ImgNum = ImgLength; }
+					   document.getElementById("image_link").href =all_text[ImgNum];
+					   document.slide_show.src = all_images[ImgNum];
+					}
+				}
+
+				function auto() {
+					if (lock == true) {
+						lock = false;
+						window.clearInterval(run);
+					}
+					else if (lock == false) {
+						lock = true;
+						run = setInterval("chgImg(1)", delay);
+					}
+				}
+			auto();
+		</script>
+
+
+		 <div class="picture">
+			<a href="austria.php" id="image_link"><img src="страны/австрия.png" name="slide_show" height="280px" width="450px"></a>
+			<span>Кликните по изображению, чтобы перейти к просмотру страны</span>
+		 </div>
+		 	<p class="popacity">
+				<i>«Со мной тоже такое бывает. Смотрю на карту — и вдруг возникает дикое желание отправиться неведомо куда. Как можно дальше от удобств и благ цивилизации. И своими глазами увидеть, какие там пейзажи и что в тех краях вообще происходит. До лихорадки, до дрожи. Но откуда в тебе это желание появилось, никому объяснить не можешь. Любопытство в чистом виде. Ничем не объяснимое вдохновение.» &copy Мураками Х. <br><br>
+				Мир гораздо интереснее, когда смотришь на него своими глазами, а не через интернет или телевидение. Но он огромен, решил однажды начать путешествовать, и сразу появляются вопросы:"С чего начать? Куда же отправиться на этот раз? Где лучше побывать летом? Зимой? Где можно насладиться активным отдыхом? А где просто отдохнуть от повседневных забот?" Сайт о путешествиях поможет вам решить эти вопросы. Благодаря нему можно узнать всю необходимую вам информацию и даже больше ;) </i>
+				</p>
+			
+			
+		</div>
+		
+		<table border="0" cellspacing="0" cellpadding="5" id="div_Menu">
+			<tr>
+				<td width="110"><<Закрыть</td>
+				<td style="" align="center" id="link_Menu">МЕНЮ</td>
+			</tr>
+		</table>
+		
+<script type="text/javascript" src="2.js"></script>
+ </body>
+</html>

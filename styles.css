@@ -1,0 +1,187 @@
+﻿body, html {
+	background-image: url('neuschwanstein-germaniya-2718.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	min-width: 700px;
+	margin:0;
+	padding:0;
+	font-family: Arial;
+	}
+	
+a {
+	text-decoration:none;
+	color:Black;
+	}
+	
+#header{
+	background-image: url('картинки/top.jpeg');
+	margin:0;
+	padding:0;
+	opacity:0.9;
+	height:50px;
+	}
+
+#content{
+	min-width:400px;
+	width:85%;
+	float: left;
+	position:relative;
+	}
+	
+#div_Menu{ 
+	position:fixed; 
+	left:-112px; 
+	top:200px; 
+	border:1px solid blue; 
+	line-height:1.5; 
+	background:#ffc08a;
+	opacity:0.8;
+	padding:5px;
+	padding-right:10px;
+	border: 2px outset black;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size:25px;
+	font-family:gabriola;
+	}
+
+.inputstyle{
+	margin:10px;
+	background-color:LightBlue;
+	}	
+	
+.popacity{
+	background:white;
+	opacity:0.7;
+	margin-top:350px;
+	margin-left: 150px;
+	margin-right:100px;
+	padding: 10px;
+	text-align: left;
+	min-width:500px;
+	box-shadow: 10px 10px 10px black;
+	border: 1px groove black;
+	border-radius: 15px;
+	text-shadow: 2px 2px 2px #f984e5;
+	font-family:  Sylfaen;
+	font-size:18px;
+	}
+
+#div_Menu2{ 
+	position:fixed; 
+	left:-112px; 
+	top:250px; 
+	border:1px solid blue;  
+	line-height:1.5; 
+	background:ffc08a;
+	opacity:0.8;
+	padding:5px;
+	padding-right:10px;
+	border: 2px outset black;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size:20px;
+	width:80px;
+	transition: width 0.8s 0.1s ease;
+	}	
+	
+	#div_Menu2:hover{
+		background-color:red;
+		border: 1px groove black;
+		text-align:center;
+		box-shadow: 10px 10px 10px black;
+		opacity:0.7;
+		width:150px;
+		}
+
+#div_Menu3{ 
+	position:fixed; 
+	left:-112px; 
+	top:300px; 
+	border:1px solid blue; 
+	line-height:1.5; 
+	background:ffc08a;
+	opacity:0.8;
+	padding:5px;
+	padding-right:10px;
+	border: 2px outset black;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size:20px;
+	width:80px;
+	transition: width 0.8s 0.1s ease;
+	}		
+		
+	#div_Menu3:hover{
+		background-color:cyan;
+		border: 1px groove black;
+		opacity:0.7;
+		width:150px;
+		text-align:center;
+		box-shadow: 10px 10px 10px black;
+		}
+		
+#div_Menu4{ 
+	position:fixed; 
+	left:-112px; 
+	top:350px; 
+	border:1px solid blue; 
+	line-height:1.5; 
+	background:ffc08a;
+	opacity:0.8;
+	padding:5px;
+	padding-right:10px;
+	border: 2px outset black;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size:20px;
+	width:80px;
+	transition: width 0.8s 0.1s ease;
+	}
+
+	#div_Menu4:hover{
+		background-color:yellow;
+		border: 1px groove black;
+		opacity:0.7;
+		width:150px;
+		text-align:center;
+		box-shadow: 10px 10px 10px black;
+		}
+	
+ #link_Menu{ 
+	background-color:ffc08a; 
+	cursor:pointer; 
+	font-size:25px;
+	font-family:gabriola;
+	}
+	
+#menu{
+	min-width:100px;
+	width:15%;
+	float: left;
+	margin-top: 80px;
+	}
+
+ .picture {
+    display:inline-block;   
+    position:relative;
+	float:right;
+	padding: 35px;
+	padding-top:5px; 
+	}
+	
+	.picture span {
+		text-align:center;
+		display:inline-block;
+		position:absolute;
+		top:245px;   
+		left:100px;
+		right: 35px;
+		margin: 5px; 
+		color:#FFF;
+		font-family:Arial;
+		font-size:15px;    
+		background-color:rgba(0,0,0,.4);
+		padding:0;
+		}

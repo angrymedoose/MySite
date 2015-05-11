@@ -1,0 +1,264 @@
+﻿body, html {
+	background-image: url('neuschwanstein-germaniya-2718 - копия.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	min-width: 700px;
+	margin:0;
+	padding:0;
+	font-family: Arial;
+	}
+	
+p{
+	background-color:white;
+	opacity:0.8;
+	padding:10px;
+	margin:10px;
+	box-shadow: 10px 10px 10px black;
+	border: 1px dashed black;
+	border-radius: 10px;
+	}
+	
+span{
+	position:fixed;
+	text-align:center;
+    display:inline-block;
+    position:absolute;
+    top:290px;   
+	width:790px;
+	margin: 5px; 
+    color:#FFF;
+    font-family:Arial;
+    font-size:25px;    
+    background-color:rgba(0,0,0,.4);
+    padding:0;
+}
+
+legend{
+	color:blue;
+	text-shadow: 2px 2px 2px blue;
+	font-family:  Sylfaen;
+	font-size:20px;
+	}
+
+a{
+	text-decoration:none;
+	color:white;
+	}
+
+#header{
+	background-image: url('картинки/top.jpeg');
+	margin:0;
+	padding:0;
+	opacity:0.9;
+	height:50px;
+	}
+	
+#content{
+	background: url('bkgrnd/82.jpg');
+	width:70%;
+	background-repeat:repeat;
+	background-position:center;
+	background-attachment:fixed;
+	height: 100%;
+	margin:0 auto;	
+	}
+	
+ #link_Menu{ 
+	background-color:ffc08a; 
+	cursor:pointer; 
+	font-size:25px;
+	font-family:gabriola;
+	}	
+	
+#menu{
+	min-width:100px;
+	width:15%;
+	float: left;
+	margin-top: 80px;
+	}
+	
+.spoiler_body { 
+	display:none; 
+	font-style:italic;
+	}
+	
+ .spoiler_links { 
+	cursor:pointer; 
+	font-weight:bold;
+	}
+	
+ .cities{
+	top:250px; 
+	border:1px solid blue;  
+	line-height:1.5; 
+	background:ffc08a;
+	opacity:0.8;
+	padding:5px;
+	margin: 5px 0;
+	border: 2px outset black;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 10px;
+	font-size:20px;
+	width:80px;
+	transition: background-color 0.8s 0.1s ease;
+	}	
+
+	.cities:hover{
+		background-color:blue;
+		border: 1px groove black;
+		text-align:center;
+		box-shadow: 10px 10px 10px black;
+		opacity:0.7;
+		width:100px;
+		}
+		
+	.cities a{
+		color:black;
+	}
+
+.button{
+	border:3px groove Blue; 
+	background-color:black;
+	opacity:0.8;
+	padding:5px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 10px;
+	}
+	
+.button2{
+	border:3px groove Blue; 
+	background-color:black;
+	opacity:0.8;
+	padding:5px;
+	}
+	
+.button3{
+	border:3px groove Blue; 
+	background-color:black;
+	opacity:0.8;
+	padding:5px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 10px;
+	}
+
+.text{
+	background-color:white;
+	opacity:0.8;
+	padding:10px;
+	margin:5px;
+	box-shadow: 10px 10px 10px black;
+	border: 1px groove black;
+	border-radius: 10px;
+
+	}
+	
+.textcolor{
+	color:white;
+	}
+	
+.decor{
+color:blue;
+text-shadow:2px 2px 5px blue;
+padding:20px;
+font-size:18px;
+}	
+
+.main{
+	background-image: url("bkgrnd/beck_menu.jpg");
+	background-repeat:repeat;
+	height:25px;
+	}
+	
+.alink a {
+		text-decoration:none;
+		color:Black;
+		}
+	
+.main a{
+	text-decoration: none;
+	text-shadow:2px 2px 5px white;
+	font-family:calibri;
+	color:white;
+	padding: 0 15px;
+	padding-bottom:5px;
+	border-right: 3px groove white;
+	border-bottom-right-radius: 50px;
+	}
+
+	.main a:hover{
+		text-shadow:2px 2px 5px red;
+		color: orange;
+		}
+
+.littleimg img{
+	float: left;
+	margin: 20px;
+	width:300px;
+	height:180px;
+	opacity:1;
+	transition: transform 0.2s ease-in-out;
+	}
+	
+	.littleimg img:hover{
+	transform: scale(2);
+	box-shadow: 4px 4px 10px black;
+	}
+
+.littleimg p{
+	opacity:1;
+	min-height:180px;
+	}
+	
+.talk{
+	margin-top:100px;
+	margin-left:5px;
+}
+
+.t{
+	display:none;
+
+}
+
+.talk:hover .t{
+	border: 1px solid black; 
+    padding: 3px; 
+    display: inline;
+	margin-left:50px;
+	margin-top:-50px;
+	position:absolute;
+	opacity:0.8;
+	background:white;
+	width:150px;
+	word-wrap:break-word;
+	font-size:15px;
+	}
+	
+.comments{
+	top:250px; 
+	border:1px solid blue;  
+	line-height:1.5; 
+	background:ffc08a;
+	opacity:0.8;
+	padding:5px;
+	margin: 5px 0;
+	border: 2px outset black;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 10px;
+	font-size:20px;
+	width:150px;
+	transition: background-color 0.8s 0.1s ease;
+	}
+	
+	.comments a{
+		color:black;
+	}
+	
+	.comments:hover{
+		background-color:blue;
+		border: 1px groove black;
+		text-align:center;
+		box-shadow: 10px 10px 10px black;
+		opacity:0.7;
+		width:150px;
+		}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Оставить отзыв</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="commentstyle.css" />
+	</head>
+	<body>
+		<div id="header" align="right">
+		<form action="find.php" method="post" enctype="multipart/form-data" target="_blank">
+		<input name="num" type="text" id="form-query" value="" placeholder="поиск по сайту"> <input src="картинки/search.png" type="image" style="vertical-align: bottom; padding: 0;"/></form>	
+		</div>
+		<div class="main">
+			<a href="index.html">Главная</a>
+			<a href="">Отзывы</a>
+		</div>
+		<div class="field" align="center">
+		{errors}
+		<fieldset>
+				<legend><b>Оставьте свой отзыв:</b></legend>
+				<table border="0">
+					<tr>
+						<td align="left">Введите своё имя:</td>
+						<td align="left"><input type="text" name="name_1" size="20" value="" /></td>
+					</tr>
+					<tr>
+						<td align="left">Введите место, которое описываете:</td>
+						<td align="left"><input type="text" name="name_2" size="30" value="" /> *</td>
+					</tr>
+					<tr>
+						<td align="left">Введите ваш отзыв:</td>
+						<td><textarea name="comment" cols="40" rows="10"></textarea> *</td>
+					</tr>
+					<tr><td colspan="2" align="left"><i>Звездочкой отмечены обязательные поля!</i></td></tr>
+				</table>
+				<input type="submit" name="save" value="Отправить">
+			</fieldset>
+			</div>
+		</body>
+</html>
