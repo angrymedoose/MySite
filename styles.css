@@ -19,9 +19,19 @@ a {
 	margin:0;
 	padding:0;
 	opacity:0.9;
-	height:50px;
+	height:68px;
 	}
 
+#logo img {
+     position: absolute;
+     top: 5px;
+     left: 40%;
+     width: 200px; 
+     border-radius: 100px / 50px ;
+     border: 2px solid black;
+     box-shadow: 0 5px 10px black;
+}
+     
 #content{
 	min-width:400px;
 	width:85%;
@@ -185,3 +195,45 @@ a {
 		background-color:rgba(0,0,0,.4);
 		padding:0;
 		}
+          
+     .register {
+          position:relative;
+          color:Blue;
+          margin-right:44px;
+          margin-bottom:2px;
+          padding-right:10px;
+          text-align:right;
+          width: 150px;    
+     }
+     
+     .register a {
+          color:Blue;  
+          border-bottom: 2px outset blue;
+     }
+     
+          .register a:hover{
+               color:white;
+               border-bottom: 2px outset white;
+          }
+          
+     .logout{
+     color:White;
+     position:absolute;
+     margin-top:2px;
+     margin-left: 5px;
+     font-size:23px;
+	font-family:gabriola;
+     text-shadow: 2px 2px 5px White;
+     box-shadow: 8px 8px 8px black;
+     }   
+
+          .logout input{
+          background:blue;
+          border: 2px outset blue;
+          }
+          
+          .logout input:hover{
+          background:lightblue;
+          border: 2px outset lightblue;
+          box-shadow: 2px 2px 2px lightblue;
+          }

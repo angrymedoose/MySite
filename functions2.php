@@ -15,13 +15,14 @@
       $first_name = $res['firstname'];
       $about = $res['about'];
       $text = $res['text'];
+      $flag = $res['flag'];
    }
     else{
       $title = 'К сожалению, такая страница отсутствует на данном сайте!';
      $page_title = 'К сожалению, такая страница отсутствует на данном сайте!';
       $var_date = $desc=  '';
     }
-    $data_arr = array($name, $country, $about_pict, $link, $first_name, $about,$text);
+    $data_arr = array($name, $country, $about_pict, $link, $first_name, $about,$text,$flag);
     return $data_arr;
   }
 }

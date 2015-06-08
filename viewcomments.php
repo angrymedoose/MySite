@@ -100,18 +100,15 @@ function MakePage(){
 
 function GetComments($name){
 	$flag = FALSE;
-	$res = mysql_query("SELECT COUNT(*) FROM `comments`");
-	$row = mysql_fetch_row($res);
-	$total = $row[0];
-	for($i=1;$i<=$total;$i++){
-		$data = GetData($i);
-		$str = mb_strtolower($data[1], 'UTF-8');
+     $query = "SELECT * FROM `comments` WHERE place LIKE '%" . $name . "%'";
+     $q = mysql_query($query);
+     
 
-		if(strstr($str,$name)!=FALSE){
-			$flag=TRUE;
-			$rez = $rez . MakeName($data[0]) . MakePlace($data[1]) . MakeComment($data[2]) .MakeDate($data[3]);
-		}
-	}
+     while ($res = mysql_fetch_assoc($q)) {
+          $rez =  $rez .  MakeName($res['user']) . MakePlace($res['place']) . MakeComment($res['comment']) .MakeDate($res['date']);
+          $flag = true;
+     }
+
 	if($flag){
 			return $rez;
 		}

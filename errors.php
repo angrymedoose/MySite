@@ -6,7 +6,7 @@ function Errors()
     if (!empty($_SESSION["error"])) {
         $err = $_SESSION["error"];
         unset($_SESSION["error"]);
-		return $err;
+          return $err;
     }
 	else return '';
 }

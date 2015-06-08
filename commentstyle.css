@@ -14,8 +14,18 @@ body, html {
 	margin:0;
 	padding:0;
 	opacity:0.9;
-	height:50px;
+	height:68px;
 	}
+
+#logo img {
+     position: absolute;
+     top: 5px;
+     left: 40%;
+     width: 200px; 
+     border-radius: 100px / 50px ;
+     border: 2px solid black;
+     box-shadow: 0 5px 10px black;
+}
 	
 	.main{
 	background-image: url("bkgrnd/beck_menu.jpg");
